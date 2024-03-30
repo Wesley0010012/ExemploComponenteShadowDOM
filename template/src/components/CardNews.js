@@ -17,7 +17,6 @@ class CardNews extends HTMLElement {
 
         const autor = document.createElement('span')
         const linkTitle = document.createElement('a')
-
         const newsContent = document.createElement('p')
 
         cardLeft.appendChild(autor)

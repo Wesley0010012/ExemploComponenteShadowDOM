@@ -48,6 +48,38 @@ class CardNews extends HTMLElement {
 
     styles() {
         const style = document.createElement('style')
+        style.textContent = `
+            .card {
+                text-align: left;
+                width: 720px;
+                box-shadow: 9px 9px 27px 0px rgba(0, 0, 0, 0.75);
+                display: flex;
+                flex-direction: row;
+            }
+            
+            .card_left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 10px;
+            }
+            
+            .card_left > span {
+                font-weight: 400;
+            }
+            
+            .card_left > a {
+                margin: 10px 0;
+                font-size: 25px;
+                color: black;
+                font-weight: 500;
+                text-decoration: none;
+            }
+            
+            .card_left > p {
+                color: rgb(70, 70, 70);
+            }
+        `
 
         return style
     }
